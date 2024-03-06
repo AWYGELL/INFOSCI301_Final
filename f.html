@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFOSCI301 Final Project</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <header>
+        <h1>Analyzing Factors Driving Change and Visualizing Salary Trends in Data-Related Careers</h1>
+        <p>INFOSCI 301</p>
+        <p>Wenqing Pan & Yili Wen & Yifei Huang</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p class="main-content">Recognizing the dynamic shift of technology and innovation on careers, our project is currently focused on analyzing the changing compensation landscape for professionals working in data-related jobs globally. We are also analyzing the factors that may affect the change in compensation in 2020 and making predictions about future compensation trends accordingly.</p>
+        </section>
+
+        <section>
+            <h2>Vis1: Salary Changes (2011-2022) for Data-Related Workers</h2>
+            <iframe src="Vis1.html" class="iframe"></iframe>
+            <p class="main-content">By visualizing the change in headcount across salary ranges from 2011-2022, we can see that headcount fluctuates relatively consistently across ranges. So we then wanted to explore what factors might be contributing to the fluctuations in salaries.</p>
+        </section>
+
+        <section>
+            <h2>Vis2: Factor1 - Geo Location</h2>
+            <iframe src="vis2.html" class="iframe"></iframe>
+            <p class="main-content">We did Analysis of Variance (ANOVA) to test if there is a significant relationship between country of employment and salaries. With a high F-value of 22.82 and a very low p-value of less than 2e-16, we reject the null hypothesis, suggesting that the country of employment has a significant effect on salary differences among data-related workers. We can also use this map to visualize the changes in average wages by country.</p>
+        </section>
+
+        <section>
+            <h2>Vis3: Factor2 - Organization Size</h2>
+            <iframe src="vis3.html" class="iframe"></iframe>
+            <p class="main-content">We did an ANOVA test on the 2020 annual revenue data and the size of the company the developer works for. The low p-value (p < 0.001) shows that organization size is a significant factor influencing the salary distribution of data-related occupations. We can also see the significant effect of organization size on salary in the average and median annual salary of agency employees. As the size of the organization becomes larger, salary tend to rise.</p>
+        </section>
+
+        <section>
+            <h2>Vis4: Factor3 - Education Level</h2>
+            <iframe src="vis4.html" class="iframe"></iframe>
+            <p class="main-content">By visualizing the different salaries of employees with different levels of education, we can find that there is no significant difference in their salaries. After applying a regression test, we got the result that the p value is greater than 0.05, leading to the conclusion that education level doesn’t have a significant influence on worker’s salaries.</p>
+        </section>
+
+        <section>
+            <h2>Vis5: Factor4 - Age & Developer Type</h2>
+            <iframe src="vis5.html" class="iframe"></iframe>
+            <p class="main-content">By calculating the average salaries and average ages of people with different develop types in the company, we can see the distribution and population of employees in different data-related fields. We also did an ANOVA test on the relationship between developer type and salary, and a linear regression test on the relationship between age and salary. The results indicated that the distributions of age and salary are different, but developer type is an important factor.</p>
+        </section>
+
+        <section>
+            <h2>Vis6: Prediction Based on Four Factors</h2>
+            <iframe src="vis6.html" class="iframe"></iframe>
+            <p class="main-content">This is a plot drawn after the user chooses "country = Thailand" and "OrgSize = 100 to 499 employees". You can choose your own country and organization size to see your specific salary prediction <a href="https://colab.research.google.com/drive/1QZjn8M8828IT080x-3EaGaSmDWxmRW5U?usp=sharing" target="_blank">here</a>.</p>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+
